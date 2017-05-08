@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:useDefaultMargins="false"
+    android:layout_margin="10dp">
+    <LinearLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:useDefaultMargins="false">
+
+
+        <include
+            android:id="@+id/mWash_normal"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/mWash_cold"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/mWash_warm"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/mWash_hot1"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/mWash_hot2"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/mWash_hot3"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/mWash_hot4"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/mWash_perm"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/mWash_gentle"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/handWash"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/doNotWash"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/bleachNeeded"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/nonChlorineBleach"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/doNotBleach"
+            layout="@layout/list_item" />
+
+    </LinearLayout>
+
+
+</ScrollView>
