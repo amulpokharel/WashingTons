@@ -8,23 +8,27 @@
     <ImageView
         android:id="@+id/mainIcon"
         android:src="@drawable/s_dc_a"
-        android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentTop="true"
-        android:layout_marginRight="6dip"/>
+        android:layout_marginRight="6dip"
+        android:layout_marginEnd="6dip"
+        android:contentDescription="@string/icon"/>
 
 
     <TextView
         android:id="@+id/secondLine"
         android:layout_width="fill_parent"
-        android:layout_height="26dip"
+        android:layout_height="30dip"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_toRightOf="@id/mainIcon"
+        android:layout_toEndOf="@id/mainIcon"
         android:ellipsize="marquee"
-        android:maxLines="1"
-        android:text="Description"
+        android:maxLines="2"
+        android:text="@string/default_description"
         android:textSize="12sp" />
 
     <TextView
@@ -32,13 +36,16 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_above="@id/secondLine"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:layout_alignWithParentIfMissing="true"
+        android:layout_toEndOf="@id/mainIcon"
         android:layout_toRightOf="@id/mainIcon"
         android:gravity="center_vertical"
-        android:text="Example application"
-        android:textSize="16sp" />
+        android:text="@string/title"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
 
 

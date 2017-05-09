@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">WashingTons</string>
+    <string name="washer">Washer</string>
+    <string name="dryer">Dryer</string>
+    <string name="other">Other</string>
+    <string name="icon">Icon</string>
+    <string name="title">Default title</string>
+    <string name="default_description">Here comes a description</string>
 </resources>
