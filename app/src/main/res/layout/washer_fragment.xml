@@ -55,23 +55,23 @@
             layout="@layout/list_item" />
 
         <include
-            android:id="@+id/doNotWash"
+            android:id="@+id/do_not_wash"
             layout="@layout/list_item" />
 
         <include
-            android:id="@+id/doNotWring"
+            android:id="@+id/do_not_wring"
             layout="@layout/list_item" />
 
         <include
-            android:id="@+id/bleachNeeded"
+            android:id="@+id/bleach_needed"
             layout="@layout/list_item" />
 
         <include
-            android:id="@+id/nonChlorineBleach"
+            android:id="@+id/nonChlorine_bleach"
             layout="@layout/list_item" />
 
         <include
-            android:id="@+id/doNotBleach"
+            android:id="@+id/do_not_bleach"
             layout="@layout/list_item" />
 
     </LinearLayout>

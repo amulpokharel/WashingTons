@@ -80,27 +80,27 @@ public class WasherFragment extends Fragment{
                 "Hand Wash",
                 "Laundered through the use of water, detergent or soap and gentle hand manipulation.");
 
-        setupListItem((RelativeLayout)main.findViewById(R.id.doNotWash),
+        setupListItem((RelativeLayout)main.findViewById(R.id.do_not_wash),
                 "E",
                 "Do Not Wash",
                 "May not be safely laundered. Possibly dry clean");
 
-        setupListItem((RelativeLayout)main.findViewById(R.id.doNotWring),
+        setupListItem((RelativeLayout)main.findViewById(R.id.do_not_wring),
                 "F",
                 "Do Not Wring",
                 "Do not wring by hand or use rollers on wringer washer. Hang dry, drip dry or dry flat.");
 
-        setupListItem((RelativeLayout)main.findViewById(R.id.bleachNeeded),
+        setupListItem((RelativeLayout)main.findViewById(R.id.bleach_needed),
                 "b",
                 "Bleach When Needed",
                 "Any commercially available bleach product may be used in the laundering process.");
 
-        setupListItem((RelativeLayout)main.findViewById(R.id.nonChlorineBleach),
+        setupListItem((RelativeLayout)main.findViewById(R.id.nonChlorine_bleach),
                 "c",
                 "Non-Chlorine Bleach When Needed",
                 "Only a non-chlorine, color-safe bleach may be used in the laundering process.");
 
-        setupListItem((RelativeLayout)main.findViewById(R.id.doNotBleach),
+        setupListItem((RelativeLayout)main.findViewById(R.id.do_not_bleach),
                 "d",
                 "Do Not Bleach",
                 "No bleach product may be used.");
@@ -109,9 +109,6 @@ public class WasherFragment extends Fragment{
     }
 
     private void setupListItem(RelativeLayout rl, String mainIcon, String firstLine, String secondLine){
-        //((ImageView)rl.findViewById(R.id.mainIcon))
-        //        .setImageResource(imgSrc);
-        //set to textView
         ((TextView)rl.findViewById(R.id.mainIcon))
                 .setTypeface(wash_font);
         ((TextView)rl.findViewById(R.id.mainIcon))

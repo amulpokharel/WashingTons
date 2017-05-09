@@ -10,13 +10,13 @@
 
     <item
         android:id="@+id/menu_dryer"
-        android:icon="@drawable/ic_dryer"
+        android:icon="@drawable/ic_dry"
         android:title="@string/dryer"
         app:showAsAction="ifRoom"/>
 
     <item
         android:id="@+id/menu_home"
-        android:icon="@drawable/ic_home"
+        android:icon="@drawable/ic_other"
         android:title="@string/other"
         app:showAsAction="ifRoom"/>
 

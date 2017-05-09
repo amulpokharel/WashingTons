@@ -1,12 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <TextView
-        android:id="@+id/textView2"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:useDefaultMargins="false">
+    <LinearLayout
+        android:id="@+id/mainContainer"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="dryver!"
-        android:textSize="36sp" />
-</LinearLayout>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:useDefaultMargins="false">
+
+
+        <include
+            android:id="@+id/tNormal"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/tNormal_low"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/tNormal_medium"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/tNormal_high"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/tNormal_none"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/tPermPress"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/tGentle"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/do_not_tumble"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/do_not_dry"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/line_dry"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/drip_dry"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/dry_flat"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/dry_in_shade"
+            layout="@layout/list_item" />
+
+    </LinearLayout>
+
+
+</ScrollView>

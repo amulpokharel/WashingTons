@@ -1,12 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <TextView
-        android:id="@+id/textView3"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:useDefaultMargins="false">
+    <LinearLayout
+        android:id="@+id/mainContainer"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="othervew!"
-        android:textSize="30sp" />
-</LinearLayout>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:useDefaultMargins="false">
+
+
+        <include
+            android:id="@+id/iron_Any"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/iron_Low"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/iron_Medium"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/iron_High"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/do_Not_Steam"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/do_Not_Iron"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/dryclean"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/dryclean_Any_Solvent"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/dryclean_Petrol"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/dryclean_Trich"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/dryclean_Short"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/dryclean_Reduced"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/dryclean_low"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/dryclean_no_steam"
+            layout="@layout/list_item" />
+
+        <include
+            android:id="@+id/do_not_dryclean"
+            layout="@layout/list_item" />
+
+    </LinearLayout>
+
+
+</ScrollView>
