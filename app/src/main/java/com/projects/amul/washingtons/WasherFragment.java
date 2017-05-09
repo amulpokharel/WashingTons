@@ -1,5 +1,6 @@
 package com.projects.amul.washingtons;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -20,18 +21,21 @@ public class WasherFragment extends Fragment{
         return new WasherFragment();
     }
 
+    //setup custom font
+    Typeface wash_font;
     //3
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View main =  inflater.inflate(R.layout.washer_fragment, container, false);
+        wash_font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/wash.ttf");
 
         setupListItem((RelativeLayout)main.findViewById(R.id.mWash_normal),
-                R.drawable.s_mw_norm,
+                "A",
                 "Machine Wash, Normal",
                 "May be laundered with the hottest available water, detergent or soap, and agitation");
 
-        setupListItem((RelativeLayout)main.findViewById(R.id.mWash_cold),
+        /*setupListItem((RelativeLayout)main.findViewById(R.id.mWash_cold),
                 R.drawable.s_mw30cd,
                 "Machine Wash, Cold",
                 "Initial water temperature should not exceed 30C or 65 to 85F.");
@@ -94,14 +98,19 @@ public class WasherFragment extends Fragment{
         setupListItem((RelativeLayout)main.findViewById(R.id.doNotBleach),
                 R.drawable.s_b_dont_s,
                 "Do Not Bleach",
-                "No bleach product may be used.");
+                "No bleach product may be used.");*/
 
         return main;
     }
 
-    private void setupListItem(RelativeLayout rl, int imgSrc, String firstLine, String secondLine){
-        ((ImageView)rl.findViewById(R.id.mainIcon))
-                .setImageResource(imgSrc);
+    private void setupListItem(RelativeLayout rl, String mainIcon, String firstLine, String secondLine){
+        //((ImageView)rl.findViewById(R.id.mainIcon))
+        //        .setImageResource(imgSrc);
+        //set to textView
+        ((TextView)rl.findViewById(R.id.mainIcon))
+                .setTypeface(wash_font);
+        ((TextView)rl.findViewById(R.id.mainIcon))
+                .setText(mainIcon);
         ((TextView)rl.findViewById(R.id.firstLine))
                 .setText(firstLine);
         ((TextView)rl.findViewById(R.id.secondLine))
