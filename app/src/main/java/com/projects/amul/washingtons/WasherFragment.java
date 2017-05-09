@@ -35,70 +35,75 @@ public class WasherFragment extends Fragment{
                 "Machine Wash, Normal",
                 "May be laundered with the hottest available water, detergent or soap, and agitation");
 
-        /*setupListItem((RelativeLayout)main.findViewById(R.id.mWash_cold),
-                R.drawable.s_mw30cd,
+        setupListItem((RelativeLayout)main.findViewById(R.id.mWash_cold),
+                "L",
                 "Machine Wash, Cold",
                 "Initial water temperature should not exceed 30C or 65 to 85F.");
 
         setupListItem((RelativeLayout)main.findViewById(R.id.mWash_warm),
-                R.drawable.s_mw40cd,
+                "K",
                 "Machine Wash, Warm",
                 "Initial water temperature should not exceed 40C or 105F.");
 
         setupListItem((RelativeLayout)main.findViewById(R.id.mWash_hot1),
-                R.drawable.s_mw50cd,
+                "J",
                 "Machine Wash, Hot",
                 "Initial water temperature should not exceed 50C or 120F.");
 
         setupListItem((RelativeLayout)main.findViewById(R.id.mWash_hot2),
-                R.drawable.s_mw60cd,
+                "I",
                 "Machine Wash, Hot",
                 "Initial water temperature should not exceed 60C or 140F.");
 
         setupListItem((RelativeLayout)main.findViewById(R.id.mWash_hot3),
-                R.drawable.s_mw70cd,
+                "H",
                 "Machine Wash, Hot",
                 "Initial water temperature should not exceed 70C or 160F.");
 
         setupListItem((RelativeLayout)main.findViewById(R.id.mWash_hot4),
-                R.drawable.s_mw95cd,
+                "G",
                 "Machine Wash, Hot",
                 "Initial water temperature should not exceed 95C or 200F.");
 
         setupListItem((RelativeLayout)main.findViewById(R.id.mWash_perm),
-                R.drawable.s_mw_ppres,
+                "B",
                 "Machine Wash, Permanent Press",
                 "Only on Permanent Press with cool down or cold rinse prior to reduced spin.");
 
         setupListItem((RelativeLayout)main.findViewById(R.id.mWash_gentle),
-                R.drawable.s_mwgentle,
+                "C",
                 "Machine Wash, Machine Wash, Gentle or Delicate",
                 "Only on the setting designed for gentle agitation and/or reduced time for delicate items.");
 
         setupListItem((RelativeLayout)main.findViewById(R.id.handWash),
-                R.drawable.s_hndw,
+                "D",
                 "Hand Wash",
                 "Laundered through the use of water, detergent or soap and gentle hand manipulation.");
 
         setupListItem((RelativeLayout)main.findViewById(R.id.doNotWash),
-                R.drawable.s_w_donot,
+                "E",
                 "Do Not Wash",
                 "May not be safely laundered. Possibly dry clean");
 
+        setupListItem((RelativeLayout)main.findViewById(R.id.doNotWring),
+                "F",
+                "Do Not Wring",
+                "Do not wring by hand or use rollers on wringer washer. Hang dry, drip dry or dry flat.");
+
         setupListItem((RelativeLayout)main.findViewById(R.id.bleachNeeded),
-                R.drawable.s_b_any,
+                "b",
                 "Bleach When Needed",
                 "Any commercially available bleach product may be used in the laundering process.");
 
         setupListItem((RelativeLayout)main.findViewById(R.id.nonChlorineBleach),
-                R.drawable.s_b_nonchl,
+                "c",
                 "Non-Chlorine Bleach When Needed",
                 "Only a non-chlorine, color-safe bleach may be used in the laundering process.");
 
         setupListItem((RelativeLayout)main.findViewById(R.id.doNotBleach),
-                R.drawable.s_b_dont_s,
+                "d",
                 "Do Not Bleach",
-                "No bleach product may be used.");*/
+                "No bleach product may be used.");
 
         return main;
     }
