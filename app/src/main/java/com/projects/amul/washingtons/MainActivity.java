@@ -60,14 +60,12 @@ public class MainActivity extends AppCompatActivity {
             // This method will be invoked when a new page becomes selected.
             @Override
             public void onPageSelected(int position) {
-                bottomNavigationView.getMenu().getItem(position);
-            }
+                bottomNavigationView.getMenu().getItem(position).setChecked(true);            }
 
             // This method will be invoked when the current page is scrolled
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                bottomNavigationView.getMenu().getItem(position);
-            }
+                bottomNavigationView.getMenu().getItem(position).setChecked(true);            }
 
             // Called when the scroll state changes:
             // SCROLL_STATE_IDLE, SCROLL_STATE_DRAGGING, SCROLL_STATE_SETTLING
