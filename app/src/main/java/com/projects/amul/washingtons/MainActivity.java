@@ -13,6 +13,7 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
+    //adapter for the viewpager
     public static class PagerAdapter extends FragmentPagerAdapter{
         private static int NUM_ITEMS = 3;
         public PagerAdapter (FragmentManager fm){
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //instance of the adapter
     FragmentPagerAdapter viewPagerAdapter;
 
     @Override
@@ -46,15 +48,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //set up viewpager, and attach adapter
         final ViewPager vPager = (ViewPager) findViewById(R.id.mainFrame);
         viewPagerAdapter = new PagerAdapter(getSupportFragmentManager());
         vPager.setAdapter(viewPagerAdapter);
 
+        //initialize bottom nav bar
         final BottomNavigationView bottomNavigationView = (BottomNavigationView)
                 findViewById(R.id.bottom_navbar);
 
         bottomNavigationView.getMenu().getItem(0).setChecked(true);
 
+        //set a page change listener to viewpager
         vPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
 
             // This method will be invoked when a new page becomes selected.
@@ -75,10 +80,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // handle navigation selection
+        // handles nav bar selection
         bottomNavigationView.setOnNavigationItemSelectedListener(
                 new BottomNavigationView.OnNavigationItemSelectedListener() {
 
+                    //switch cases to set correct page
                     @Override
                     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                         switch (item.getItemId()) {

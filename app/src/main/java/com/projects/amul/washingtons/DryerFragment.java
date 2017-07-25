@@ -20,16 +20,21 @@ public class DryerFragment extends Fragment{
         return new DryerFragment();
     }
 
-
     //setup custom font
     Typeface wash_font;
+
     //3
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View main =  inflater.inflate(R.layout.dryer_fragment, container, false);
+
+        //initialize view + create a typeface for the washer/dryer/other icons
         wash_font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/wash.ttf");
 
+        //initialize view + create a typeface for the washer/dryer/other icons
+        View main =  inflater.inflate(R.layout.dryer_fragment, container, false);
+
+        //set up data for all the list items
         setupListItem((RelativeLayout)main.findViewById(R.id.tNormal),
                 "N",
                 "Tumble Dry, Normal",
@@ -98,6 +103,7 @@ public class DryerFragment extends Fragment{
         return main;
     }
 
+    //helper method to set the appropriate data
     private void setupListItem(RelativeLayout rl, String mainIcon, String firstLine, String secondLine){
         ((TextView)rl.findViewById(R.id.mainIcon))
                 .setTypeface(wash_font);

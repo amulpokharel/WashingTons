@@ -27,9 +27,11 @@ public class OtherFragment extends Fragment{
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        //initialize view + create a typeface for the washer/dryer/other icons
         View main =  inflater.inflate(R.layout.other_fragment, container, false);
         wash_font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/wash.ttf");
 
+        //set up data for all the list items
         setupListItem((RelativeLayout)main.findViewById(R.id.iron_Any),
                 "e",
                 "Iron, Any Temperature, Steam or Dry",
@@ -108,6 +110,7 @@ public class OtherFragment extends Fragment{
         return main;
     }
 
+    //helper method to set the appropriate data
     private void setupListItem(RelativeLayout rl, String mainIcon, String firstLine, String secondLine){
         ((TextView)rl.findViewById(R.id.mainIcon))
                 .setTypeface(wash_font);

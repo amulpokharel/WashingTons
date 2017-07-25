@@ -7,7 +7,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -27,9 +26,11 @@ public class WasherFragment extends Fragment{
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        //initialize view + create a typeface for the washer/dryer/other icons
         View main =  inflater.inflate(R.layout.washer_fragment, container, false);
         wash_font = Typeface.createFromAsset(getActivity().getAssets(), "fonts/wash.ttf");
 
+        //set up data for all the list items
         setupListItem((RelativeLayout)main.findViewById(R.id.mWash_normal),
                 "A",
                 "Machine Wash, Normal",
@@ -108,6 +109,7 @@ public class WasherFragment extends Fragment{
         return main;
     }
 
+    //helper method to set the appropriate data
     private void setupListItem(RelativeLayout rl, String mainIcon, String firstLine, String secondLine){
         ((TextView)rl.findViewById(R.id.mainIcon))
                 .setTypeface(wash_font);
